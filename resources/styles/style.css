@@ -81,7 +81,7 @@ header a {
     text-decoration: none;
     color: var(--clr-accent);
     border-radius: 0.25rem;
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
     padding-block: 0.5rem;
 }
 
@@ -96,15 +96,21 @@ header a:active {
 
 header ul {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     list-style: none;
 }
 
-.logo {
+#logo {
     font-size: var(--fs-700);
 }
 
 .mobile{
     display: none;
+}
+
+.mobile img {
+    height: 2.5rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -114,6 +120,35 @@ header ul {
     .mobile{
         display: block;
     }
+}
+
+#mobile-nav{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: var(--clr-light);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--clr-primary);
+    border-bottom: 2px solid var(--clr-primary);
+}
+
+#mobile-nav img {
+    height: 2.5rem;
+}
+
+.menu-image {
+    height: 40px;
+    padding-block: 0.25rem;
+}
+
+#mobile-nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
 }
 
 /* HERO */
@@ -132,7 +167,7 @@ header ul {
     object-fit: cover;
     border-radius: 4rem;
     box-shadow: 0.2rem 1rem 1rem -0.5rem hsla(302, 36%, 15%, 0.3);
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-primary);
 }
 
 .hero h1 {
@@ -166,6 +201,7 @@ header ul {
     .hero h1 {
         font-size: var(--fs-700);
         text-align: center;
+        margin-top: 0rem;
     }
     .hero button {
         text-align: center;
@@ -225,4 +261,6 @@ header ul {
     justify-content: space-around;
     align-items: center;
     padding-block: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
