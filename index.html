@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./resources/styles/style.css">
+    <link rel="stylesheet" href="./resources/styles/home-style.css">
+    <link rel="stylesheet" href="./resources/styles/navbar.css">
+    <link rel="stylesheet" href="./resources/styles/footer.css">
 </head>
 <body>
     <header>
@@ -20,7 +22,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <nav class="mobile">
@@ -34,7 +36,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -116,18 +118,31 @@
         </article>
         <section class="cta">
             <h2>Get in Touch</h2>
+            <p>Want to find out more about what I do?</p>
             <form>
-                <input type="text" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Enter your email address here" required>
                 <input type="submit" name="submit" id="submit">
             </form>
         </section>
     </main>
     <footer>
         <div class="social-links">
-
+            <h3>Follow Me</h3>
+            <div class="links">
+                <a href="https://www.facebook.com/robbiedob21/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                <a href="https://www.instagram.com/runningrobbie/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                <a href="https://github.com/robbiedob21"><i class="fa-brands fa-square-github fa-3x"></i></a>
+            </div>
         </div>
         <div class="info">
-
+            <h3>Contact Details</h3>
+            <div>
+                <h4>Email:</h4>
+                <p>robbiedob21@gmail.com</p>
+            </div>
+                <h4>Phone:</h4>
+                <p>+64211011105</p>
+            <div></div>
         </div>
     </footer>
     <script src="./resources/scripts/navbar.js"></script>
